@@ -1,0 +1,28 @@
+<app-header></app-header>
+
+<div class="container">
+
+    <div class="card">
+        <div class="card-header">
+            <h3>Editar Menues</h3>
+        </div>           
+    </div>
+    <div class="card-body">
+        <div action="">
+            <div class="form-group">
+                <label for="">Nombre Platillo: </label>
+                <input type="text" class="form-control"  [(ngModel)]="menu.plato" >
+            </div>
+            <div class="form-group">
+                <label for="">Precio: </label>
+                <input type="text" class="form-control"  [(ngModel)]="menu.precio">
+            </div>
+            <div class="form-group">
+                <label for="">Empresa: </label>
+                <input type="text" class="form-control"  [(ngModel)]="menu.idempresa">
+            </div>
+            <button  class="btn btn-danger" (click)="modificarMenu()">Guardar Cambios</button>
+          </div>
+    </div>
+
+</div>

@@ -1,0 +1,30 @@
+<app-header></app-header>
+
+<div class="container">
+
+    <table class="table table-hover">
+        <thead>
+          <tr>
+            
+            <th scope="col">Platillo</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Estado</th>
+            <th scope="col">Empresa</th>
+            <th scope="col">Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let menu of menues">
+            
+            <td>{{menu.plato}}</td>
+            <td>S/. {{menu.precio}}</td>
+            <td>{{menu.estado}}</td>
+            <td>{{menu.idempresa}}</td>
+            <td> <i class="fa fa-edit" (click)="rutaupdate()"></i> - <i class="fa fa-trash" (click)="eliminarMenues(menu.idMenu)"></i> </td>
+          </tr>
+         
+           
+        </tbody>
+      </table>
+
+</div>
